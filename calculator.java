@@ -73,11 +73,11 @@ public class calculator {
 		buttonAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					int num1,num2,sum;
-					num1 = Integer.parseInt(textField1.getText());
-					num2 = Integer.parseInt(textField2.getText());
+					float num1,num2,sum;
+					num1 = Float.parseFloat(textField1.getText());
+					num2 = Float.parseFloat(textField2.getText());
 					sum = num1+num2;
-					textFieldAns.setText(Integer.toString(sum));
+					textFieldAns.setText(Float.toString(sum));
 				}
 				catch(Exception e1) {
 					JOptionPane.showMessageDialog(null, "Enter Valid Number");
@@ -92,11 +92,11 @@ public class calculator {
 		buttonSubtract.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					int num1,num2,sum;
-					num1 = Integer.parseInt(textField1.getText());
-					num2 = Integer.parseInt(textField2.getText());
+					Float num1,num2,sum;
+					num1 = Float.parseFloat(textField1.getText());
+					num2 = Float.parseFloat(textField2.getText());
 					sum = num1 - num2;
-					textFieldAns.setText(Integer.toString(sum));
+					textFieldAns.setText(Float.toString(sum));
 				}
 				catch(Exception e1) {
 					JOptionPane.showMessageDialog(null, "Enter Valid Number");
@@ -111,11 +111,11 @@ public class calculator {
 		buttonMultiply.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					int num1,num2,sum;
-					num1 = Integer.parseInt(textField1.getText());
-					num2 = Integer.parseInt(textField2.getText());
+					float num1,num2,sum;
+					num1 = Float.parseFloat(textField1.getText());
+					num2 = Float.parseFloat(textField2.getText());
 					sum = num1*num2;
-					textFieldAns.setText(Integer.toString(sum));
+					textFieldAns.setText(Float.toString(sum));
 				}
 				catch(Exception e1) {
 					JOptionPane.showMessageDialog(null, "Enter Valid Number");
@@ -130,11 +130,11 @@ public class calculator {
 		buttonDivide.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					int num1,num2,sum;
-					num1 = Integer.parseInt(textField1.getText());
-					num2 = Integer.parseInt(textField2.getText());
+					Float num1,num2,sum;
+					num1 = Float.parseFloat(textField1.getText());
+					num2 = Float.parseFloat(textField2.getText());
 					sum = num1/num2;
-					textFieldAns.setText(Integer.toString(sum));
+					textFieldAns.setText(Float.toString(sum));
 				}
 				catch(Exception e1) {
 					JOptionPane.showMessageDialog(null, "Enter Valid Number");
@@ -151,13 +151,13 @@ public class calculator {
 		
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-					int num1,num2,sum;
-					num1 = 0;
-					num2 = 0;
+					Float num1,num2,sum;
+					num1 = (float) 0;
+					num2 = (float)  0;
 					sum = num1+num2;
-					textFieldAns.setText(Integer.toString(sum));
-					textField1.setText(Integer.toString(num1));
-					textField2.setText(Integer.toString(num2));
+					textFieldAns.setText(Float.toString(sum));
+					textField1.setText(Float.toString(num1));
+					textField2.setText(Float.toString(num2));
 			}
 		});
 		btnClear.setBounds(25, 132, 106, 34);
