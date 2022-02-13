@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 
-public class calculator {
+public class FutureInvestment {
 
 	private JFrame frame;
 	private JTextField textField1;
@@ -29,7 +29,7 @@ public class calculator {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					calculator window = new calculator();
+					FutureInvestment window = new FutureInvestment();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ public class calculator {
 	/**
 	 * Create the application.
 	 */
-	public calculator() {
+	public FutureInvestment() {
 		initialize();
 	}
 
@@ -134,6 +134,9 @@ public class calculator {
 					num1 = Float.parseFloat(textField1.getText());
 					num2 = Float.parseFloat(textField2.getText());
 					sum = num1/num2;
+					if(num2 == 0) {
+						JOptionPane.showMessageDialog(null, "Error. Cannot divide by zero");
+					}
 					textFieldAns.setText(Float.toString(sum));
 				}
 				catch(Exception e1) {
