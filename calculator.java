@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 
-public class FutureInvestment {
+public class calculator {
 
 	private JFrame frame;
 	private JTextField textField1;
